@@ -20,24 +20,6 @@ enum AvailableGestures { none, verticalSwipe, horizontalSwipe, all }
 /// Formats that the calendar can display.
 enum CalendarFormat { month, twoWeeks, week }
 
-/// Days of the week that the calendar can start with.
-enum StartingDayOfWeek {
-  monday,
-  tuesday,
-  wednesday,
-  thursday,
-  friday,
-  saturday,
-  sunday,
-}
-
-/// Returns a numerical value associated with given `weekday`.
-///
-/// Returns 1 for `StartingDayOfWeek.monday`, all the way to 7 for `StartingDayOfWeek.sunday`.
-int getWeekdayNumber(StartingDayOfWeek weekday) {
-  return StartingDayOfWeek.values.indexOf(weekday) + 1;
-}
-
 /// Returns `date` in UTC format, without its time part.
 DateTime normalizeDate(DateTime date) {
   return DateTime.utc(date.year, date.month, date.day);

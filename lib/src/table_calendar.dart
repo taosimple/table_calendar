@@ -11,6 +11,7 @@ import 'customization/calendar_builders.dart';
 import 'customization/calendar_style.dart';
 import 'customization/days_of_week_style.dart';
 import 'customization/header_style.dart';
+import 'shared/date_utils.dart';
 import 'shared/utils.dart';
 import 'table_calendar_base.dart';
 import 'widgets/calendar_header.dart';

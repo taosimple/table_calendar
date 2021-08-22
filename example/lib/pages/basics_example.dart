@@ -22,10 +22,7 @@ class _TableBasicsExampleState extends State<TableBasicsExample> {
       appBar: AppBar(
         title: Text('TableCalendar - Basics'),
       ),
-      body: TableCalendar(
-        firstDay: kFirstDay,
-        lastDay: kLastDay,
-        focusedDay: _focusedDay,
+      body: Calendar(
         calendarFormat: _calendarFormat,
         selectedDayPredicate: (day) {
           // Use `selectedDayPredicate` to determine which day is currently selected.

@@ -3,6 +3,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:intl/date_symbol_data_local.dart';
+import 'package:table_calendar_example/pages/single_page_example.dart';
 
 import 'pages/basics_example.dart';
 import 'pages/complex_example.dart';
@@ -81,6 +82,14 @@ class _StartPageState extends State<StartPage> {
               onPressed: () => Navigator.push(
                 context,
                 MaterialPageRoute(builder: (_) => TableComplexExample()),
+              ),
+            ),
+            const SizedBox(height: 20.0),
+            ElevatedButton(
+              child: Text('Single Page'),
+              onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => SinglePageExample()),
               ),
             ),
             const SizedBox(height: 20.0),
