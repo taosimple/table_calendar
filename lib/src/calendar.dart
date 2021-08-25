@@ -21,7 +21,6 @@ class Calendar<T> extends TableCalendar<T> {
     CalendarFormat calendarFormat = CalendarFormat.month,
     Map<CalendarFormat, String> availableCalendarFormats = const {
       CalendarFormat.month: 'Month',
-      CalendarFormat.twoWeeks: '2 weeks',
       CalendarFormat.week: 'Week',
     },
     bool headerVisible = true,
@@ -33,12 +32,12 @@ class Calendar<T> extends TableCalendar<T> {
     double rowHeight = 52.0,
     double daysOfWeekHeight = 16.0,
     Duration formatAnimationDuration = const Duration(milliseconds: 200),
-    Curve formatAnimationCurve = Curves.linear,
+    Curve formatAnimationCurve = Curves.fastOutSlowIn,
     Duration pageAnimationDuration = const Duration(milliseconds: 300),
     pageAnimationCurve = Curves.easeOut,
     StartingDayOfWeek startingDayOfWeek = StartingDayOfWeek.monday,
     HitTestBehavior dayHitTestBehavior = HitTestBehavior.opaque,
-    AvailableGestures availableGestures = AvailableGestures.horizontalSwipe,
+    AvailableGestures availableGestures = AvailableGestures.all,
     SimpleSwipeConfig simpleSwipeConfig = const SimpleSwipeConfig(
       verticalThreshold: 25.0,
       swipeDetectionBehavior: SwipeDetectionBehavior.continuousDistinct,

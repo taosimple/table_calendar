@@ -193,7 +193,7 @@ class _TableCalendarBaseState extends State<TableCalendarBase>
                 vsync: this,
                 duration: widget.formatAnimationDuration,
                 curve: widget.formatAnimationCurve,
-                alignment: Alignment.topCenter,
+                alignment: Alignment.bottomCenter,
                 child: SizedBox(
                   height: height,
                   child: child,
